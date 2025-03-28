@@ -1,0 +1,8 @@
+/* 다른 스타일 시트에서 또다른 스타일을 불러올 때 사용. */
+@import './side.css';
+
+h1,
+p {
+  color: red;
+  background: orange;
+}

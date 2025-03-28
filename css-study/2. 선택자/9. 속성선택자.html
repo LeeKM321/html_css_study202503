@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      input[value='hello'] {
+        width: 200px;
+        color: blue;
+      }
+
+      input[type='password'] {
+        width: 100px;
+        color: red;
+      }
+
+      input[disabled] {
+        opacity: 0.2;
+      }
+
+      button[class^='btn-'] {
+        font-weight: bold;
+        border-radius: 20px;
+      }
+
+      button[class$='success'] {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="hello" />
+    <input type="password" value="1234" />
+    <input type="text" value="disabled-text" disabled />
+
+    <button class="btn-success">Success</button>
+    <button class="btn-danger">Danger</button>
+    <button>지목되면 안되는 버튼</button>
+  </body>
+</html>

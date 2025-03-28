@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 500px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>이름</td>
+        <td>나이</td>
+        <td>성별</td>
+        <td>주소</td>
+        <td rowspan="4" align="center">
+          <button>세로버튼</button>
+        </td>
+      </tr>
+      <tr>
+        <td>김춘식</td>
+        <td>30</td>
+        <td>남자</td>
+        <td>서울특별시</td>
+      </tr>
+      <tr>
+        <td>박영희</td>
+        <td>25</td>
+        <td>여자</td>
+        <td>경기도 구리시</td>
+      </tr>
+      <tr>
+        <td colspan="4" align="center">
+          <button>버튼입니다.</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

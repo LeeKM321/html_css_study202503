@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 100점 */
+      #c-y {
+        color: yellow;
+      }
+
+      /* 1 + 1 + 10 = 12점 */
+      body > div.c-g {
+        color: green;
+      }
+
+      /* 10점 */
+      .c-g {
+        color: blue;
+      }
+
+      /* 0점 */
+      * {
+        color: red;
+      }
+
+      /* 10 + 1 + 10 + 1 + 10 = 32점 */
+      .aaa div.bbb h1:nth-child(1) {
+        color: lightgray;
+      }
+
+      /* 1 + 100 + 1 + 0 = 102 */
+      ul#fruits > li:not(.orange) {
+      }
+
+      div {
+        /* !important: 무한대 점 */
+        color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="c-y" class="c-g">안녕하세요1</div>
+    <div>안녕하세요2</div>
+    <!-- 인라인 스타일: 1000점 -->
+    <div style="color: aqua">안녕하세요3</div>
+    <div class="aaa">
+      안녕하세요4
+      <div class="bbb">
+        <h1>안녕하세요5</h1>
+      </div>
+    </div>
+  </body>
+</html>

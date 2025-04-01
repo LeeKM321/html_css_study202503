@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        background: red;
+
+        /* transition-duration: 1s;
+        transition-delay: 0.2s;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+        /* transition: 속성이름 지속시간 딜레이 타이밍함수 */
+        transition: all 1s 2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+      }
+
+      .box:hover {
+        width: 300px;
+        background: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

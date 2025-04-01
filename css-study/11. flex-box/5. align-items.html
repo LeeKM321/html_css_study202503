@@ -12,8 +12,12 @@
         border: 4px solid #000;
         display: flex;
         flex-flow: row wrap;
-        align-content: center;
+
+        /* items는  각 줄(행) 안에서의 정렬을 생각하면 됨 (행을 나누는 가상의 선을 생각)
+           content는 여러 줄 사이의 정렬을 생각. (줄이 하나만 있을 때는 효과가 없습니다.) */
+        align-items: flex-start;
       }
+
       .item {
         width: 150px;
         height: 150px;

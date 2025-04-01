@@ -115,3 +115,142 @@ header .inner-header .tnb li:last-child a:hover {
   background: #fff;
   color: #ff8342;
 }
+
+/* ---------------- section.main style ----------------------- */
+section.main {
+  background: url(./img/vis_4.jpg) no-repeat center / cover fixed;
+  height: 100vh;
+  position: relative;
+}
+
+section.main .main-title {
+  /* background: gray; */
+  width: 45%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 10px #123;
+}
+
+section.main .main-title h2 {
+  font-size: 55px;
+}
+
+section.main .main-title p {
+  font-size: 25px;
+  margin: 25px 0;
+}
+
+section.main .main-title .view {
+  font-size: 20px;
+  letter-spacing: 2px;
+
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 8px 0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+section.main .main-title .view::after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+section.main .main-title .view:hover::after {
+  width: 100%;
+}
+
+/* ---------------- section.about style ----------------------- */
+section.about {
+  /* background: tomato; */
+  margin: 80px 0;
+}
+
+section.about .title {
+  text-align: center;
+}
+
+section.about .title h2 {
+  font-size: 45px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+section.about .title p {
+  font-size: 18px;
+  color: #555;
+}
+
+section.about .sub-container {
+  /* background: yellowgreen; */
+  width: 74%;
+  margin: 30px auto;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+section.about .sub-container li .img-box {
+  overflow: hidden;
+}
+
+section.about .sub-container li .img-box img {
+  width: 100%;
+  transition: 0.6s;
+}
+
+section.about .sub-container li a:hover .img-box img {
+  transform: scale(1.2);
+}
+
+section.about .sub-container li a .text {
+  padding: 25px;
+}
+
+section.about .sub-container li a .text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section.about .sub-container li a .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+section.about .sub-container li a .text p.more {
+  text-transform: uppercase;
+  font-weight: 700;
+
+  position: relative;
+  padding-left: 40px;
+}
+
+section.about .sub-container li a .text p.more::before {
+  content: '→';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background: #ff8342;
+
+  position: absolute;
+  top: -7px;
+  left: 0;
+}

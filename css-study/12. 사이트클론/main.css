@@ -176,31 +176,37 @@ section.main .main-title .view:hover::after {
   width: 100%;
 }
 
+/* 각 section에 들어갈 공통 디자인을 일괄 지정 */
+section .title {
+  text-align: center;
+}
+
+section .title h2 {
+  font-size: 45px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+section .title p {
+  font-size: 18px;
+  color: #555;
+}
+
+section .sub-container {
+  width: 74%;
+  margin: 0 auto;
+}
+
 /* ---------------- section.about style ----------------------- */
 section.about {
   /* background: tomato; */
   margin: 80px 0;
 }
 
-section.about .title {
-  text-align: center;
-}
-
-section.about .title h2 {
-  font-size: 45px;
-  color: #111;
-  margin-bottom: 10px;
-}
-
-section.about .title p {
-  font-size: 18px;
-  color: #555;
-}
-
 section.about .sub-container {
   /* background: yellowgreen; */
-  width: 74%;
-  margin: 30px auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   border-bottom: 1px solid #ddd;
   padding-bottom: 30px;
@@ -253,4 +259,58 @@ section.about .sub-container li a .text p.more::before {
   position: absolute;
   top: -7px;
   left: 0;
+}
+
+/* ---------------- section.innovation style ----------------------- */
+section.innovation {
+  margin-bottom: 150px;
+}
+
+section.innovation .img-box {
+  margin-top: 50px;
+  height: 540px;
+  background: url(./img/product_1.jpg) no-repeat center / cover;
+
+  position: relative;
+}
+
+section.innovation .img-box .inner {
+  background: #3a3c4e;
+  width: 80%;
+  color: #fff;
+
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.innovation .img-box .inner h3 {
+  background: #fff;
+  color: #222;
+  font-size: 18px;
+  padding: 25px 45px;
+}
+
+section.innovation .img-box .inner .bottom {
+  padding: 35px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.innovation .img-box .inner .bottom p {
+  width: 70%;
+  line-height: 1.6em;
+}
+
+section.innovation .img-box .inner .bottom a {
+  /* 부모가 display: flex이기 때문에 a태그임에도 불구하고 블록 요소로 취급 */
+  padding: 7px 30px;
+  border-radius: 50px;
+  background: #ff8342;
+}
+
+section.innovation .img-box .inner .bottom a:hover {
+  background: #f86010;
 }

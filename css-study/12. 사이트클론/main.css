@@ -314,3 +314,96 @@ section.innovation .img-box .inner .bottom a {
 section.innovation .img-box .inner .bottom a:hover {
   background: #f86010;
 }
+
+/* -------------------section.me style---------------------------- */
+section.me {
+  background: url(./img/me.jpg) no-repeat center / cover;
+  padding: 80px 0;
+  margin-bottom: 150px;
+}
+
+section.me ul.list {
+  margin-top: 50px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+section.me ul.list > li {
+  padding: 30px 60px;
+}
+
+section.me ul.list > li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+
+section.me ul.list > li h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section.me ul.list > li h3 span {
+  position: absolute;
+  left: -30px;
+  color: #ff8342;
+}
+
+section.me ul.list > li p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+section.me ul.list > li .more {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section.me ul.list > li .more span {
+  color: #ff8342;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+section.me ul.list ul.in {
+  margin-bottom: 30px;
+}
+
+section.me ul.list ul.in li {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+section.me ul.list ul.in li em {
+  font-weight: 700;
+  width: 12%;
+}
+
+section.me ul.list ul.in li p {
+  margin-bottom: 0;
+  position: relative;
+}
+
+section.me ul.list ul.in li p::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ff8342;
+
+  position: absolute;
+  left: -35px;
+  top: 8px;
+}
+
+#incruit-btn {
+  display: block;
+  width: 280px;
+  background: #ff8342;
+  color: #fff;
+  margin: 20px auto 0;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 10px 0;
+  cursor: pointer;
+}
